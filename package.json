@@ -9,6 +9,9 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "dayjs": "^1.8.16",
+    "iview": "^3.5.0-rc.1",
+    "tm-flextable": "0.0.18",
     "vue": "^2.6.10"
   },
   "devDependencies": {
@@ -29,7 +32,14 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "rules": {},
+    "rules": {
+      "vue/no-parsing-error": [
+        2,
+        {
+          "x-invalid-end-tag": false
+        }
+      ]
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }
